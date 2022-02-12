@@ -1,0 +1,34 @@
+<div class="formularioRegistro">
+  <h2>REGISTRAR EMPLEADO</h2>
+  <form [formGroup]="empleadoForm" (ngSubmit)="guardar()">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" formControlName="nombre" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Apellido</label>
+      <input type="text" formControlName="apellido" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Cedula</label>
+      <input type="number" formControlName="cedula" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Correo Electronico</label>
+      <input type="mail" formControlName="mail" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Usuario</label>
+      <input type="text" formControlName="usuario" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Contraseña</label>
+      <input type="password" formControlName="contrasena" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+  </form>
+</div>
+
+
+
+<router-outlet></router-outlet>
